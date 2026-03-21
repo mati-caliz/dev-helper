@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-100: oklch(0.90 0.10 320);
+  --color-primary-200: oklch(0.80 0.15 320);
+  --color-primary-300: oklch(0.70 0.22 320);
+  --color-primary-400: oklch(0.60 0.28 320);
+  --color-primary-500: oklch(0.50 0.35 320);
+  --color-primary-600: oklch(0.40 0.40 320);
+  --color-primary-700: oklch(0.30 0.45 320);
+  --color-primary-800: oklch(0.20 0.50 320);
+  --color-primary-900: oklch(0.10 0.55 320);
+
+  --color-secondary-100: oklch(0.90 0.08 250);
+  --color-secondary-200: oklch(0.80 0.15 250);
+  --color-secondary-300: oklch(0.70 0.22 250);
+  --color-secondary-400: oklch(0.60 0.28 250);
+  --color-secondary-500: oklch(0.50 0.30 250);
+  --color-secondary-600: oklch(0.40 0.35 250);
+  --color-secondary-700: oklch(0.30 0.38 250);
+  --color-secondary-800: oklch(0.20 0.40 250);
+  --color-secondary-900: oklch(0.10 0.45 250);
+
+  --color-terciary-100: oklch(0.85 0.10 310);
+  --color-terciary-200: oklch(0.75 0.20 310);
+  --color-terciary-300: oklch(0.65 0.30 310);
+  --color-terciary-400: oklch(0.55 0.38 310);
+  --color-terciary-500: oklch(0.45 0.40 310);
+  --color-terciary-600: oklch(0.35 0.45 310);
+  --color-terciary-700: oklch(0.25 0.50 310);
+  --color-terciary-800: oklch(0.15 0.55 310);
+  --color-terciary-900: oklch(0.10 0.60 310);
+}
+
+/* Light theme overrides */
+.light-theme {
+  --tw-text-opacity: 1;
+}
+
+.light-theme input,
+.light-theme select,
+.light-theme textarea {
+  background-color: #f9fafb !important;
+  color: #1f2937 !important;
+  border-color: #d1d5db !important;
+}
+
+.light-theme input::placeholder,
+.light-theme textarea::placeholder {
+  color: #9ca3af !important;
+}
+
+.light-theme .text-white {
+  color: #1f2937 !important;
+}
+
+.light-theme .text-gray-400,
+.light-theme .text-gray-500 {
+  color: #6b7280 !important;
+}
+
+.light-theme .bg-gray-700,
+.light-theme .bg-gray-800,
+.light-theme .bg-gray-900 {
+  background-color: #f3f4f6 !important;
+}
+
+.light-theme .border-gray-200,
+.light-theme .border-gray-300,
+.light-theme .border-gray-500,
+.light-theme .border-gray-600 {
+  border-color: #d1d5db !important;
+}
+
+.light-theme .border-green-500 {
+  border-color: #22c55e !important;
+}
+
+/* Asegurar que botones con background de color tengan texto visible */
+.light-theme .bg-secondary-700,
+.light-theme .bg-secondary-600,
+.light-theme .bg-secondary-500,
+.light-theme .bg-green-600,
+.light-theme .bg-green-700,
+.light-theme .bg-red-500,
+.light-theme .bg-red-600,
+.light-theme .bg-blue-600,
+.light-theme .bg-purple-600 {
+  color: white !important;
+}
+
+.light-theme .bg-secondary-700 .text-white,
+.light-theme .bg-green-600 .text-white,
+.light-theme .bg-red-500 .text-white {
+  color: white !important;
+}

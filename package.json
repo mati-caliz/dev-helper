@@ -1,0 +1,22 @@
+{
+  "name": "localstorage-and-cookies-manager",
+  "version": "1.0.0",
+  "description": "Chrome extension to manage localStorage and cookies using Preact.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "package": "cd dist && zip -r ../extension.zip ."
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@tailwindcss/vite": "^4.1.11",
+    "preact": "^10.26.9"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.2",
+    "tailwindcss": "^4.1.11",
+    "vite": "^7.0.6"
+  },
+  "type": "module"
+}
